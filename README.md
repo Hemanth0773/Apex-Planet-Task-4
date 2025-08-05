@@ -8,14 +8,12 @@ It showcases projects, a short bio, a contact form, and more — with a modern d
 
 ## 🎨 Features
 
-- Responsive, mobile-first layout
+- Responsive layout
 - Montserrat and Lato fonts for modern typography
-- Stylish navbar with smooth navigation
-- "About Me" section with gradient background
 - To-do list with checkbox and remove options
 - Product listing with filters and sorting
 - Contact form with name, email, and feedback
-- Fixed footer with LinkedIn and email link
+
 
 ---
 
