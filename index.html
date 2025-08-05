@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End Developer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main-heading">Front End Developer Portfolio</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showPage('about')">About</a></li>
+        <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="page">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Hemanth</strong>, a passionate and curious
+        <strong>Computer Science Engineering student</strong>, currently
+        entering my <strong>3rd year of B.Tech</strong>. I recently began my
+        journey into <strong>web development</strong>, and I’ve been loving the
+        process of learning, experimenting, and creating real-world projects.
+      </p>
+
+      <p>
+        I started with the fundamentals —
+        <strong>HTML, CSS, and JavaScript</strong> — and gradually built up my
+        skills through hands-on practice. My approach has always been “learn by
+        building,” and so far, I’ve created:
+      </p>
+
+      <ul>
+        <li>🧠 A fun and interactive <strong>Quiz Webpage</strong></li>
+        <li>
+          📋 A fully functional <strong>To-Do List</strong> with task completion
+          and removal features
+        </li>
+        <li>
+          🌐 This responsive <strong>Portfolio Website</strong> to showcase my
+          work and growth
+        </li>
+      </ul>
+
+      <p>
+        My main focus is on building <strong>responsive</strong>,
+        <strong>accessible</strong>, and
+        <strong>user-friendly</strong> interfaces. I enjoy turning simple ideas
+        into beautiful, functional web experiences. I’m also learning about
+        <strong>version control with Git/GitHub</strong>, and I plan to move
+        into JavaScript frameworks like <strong>React</strong> next.
+      </p>
+
+      <p>
+        Outside of coding, I’m someone who loves
+        <strong>solving problems</strong>, improving little details, and always
+        striving to grow.
+      </p>
+
+      <h3>What’s Next?</h3>
+      <ul>
+        <li>
+          Expanding my knowledge in <strong>JavaScript</strong> and real-world
+          DOM manipulation
+        </li>
+        <li>
+          Learning about frontend best practices, accessibility, and design
+          principles
+        </li>
+      </ul>
+
+      <p>
+        This is just the beginning, and I’m excited to keep building, learning,
+        and sharing my work with the world.
+      </p>
+    </section>
+
+    <section id="projects" class="page">
+      <h2>Projects</h2>
+
+      <!-- To-Do List -->
+      <div class="todo-section">
+        <h3>To-Do List</h3>
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+
+      <!-- Product Page -->
+      <div class="product-section">
+        <h3>Product Page</h3>
+        <div class="controls">
+          <select id="categoryFilter" onchange="filterProducts()">
+            <option value="all">All Categories</option>
+            <option value="laptop">Laptop</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="sneakers">Sneakers</option>
+            <option value="watch">Watch</option>
+          </select>
+
+          <select id="sortBy" onchange="sortProducts()">
+            <option value="default">Sort By</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+          </select>
+        </div>
+
+        <div id="productList" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="feedback" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit</button>
+        <p id="formResponse" class="form-response"></p>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
